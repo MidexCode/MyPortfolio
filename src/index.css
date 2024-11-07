@@ -14,6 +14,10 @@ body {
 
 /* NavBar */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,4 +46,98 @@ body {
 
 .nav-button:hover {
   transform: scale(1.03);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-profileimg {
+  margin-top: 4rem;
+  width: 380px;
+  height: 380px;
+  border-radius: 55% 45% 55% 45%;
+  overflow: hidden;
+  animation: imgFloat 7s ease-in-out infinite;
+}
+
+.hero-profileimg img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+}
+
+@keyframes imgFloat {
+  50% {
+    transform: translateY(10px);
+    border-radius: 45% 55% 45% 55%;
+  }
+}
+
+.hero-description h1 {
+  text-align: center;
+  /* width: 96%; */
+  font-size: 2.5rem;
+}
+
+.hero-description h1 span {
+  background: linear-gradient(267deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description p {
+  text-align: center;
+  width: 96%;
+  font-size: 1rem;
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+.hero-resume a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero-connect {
+  /* padding: 1rem 2rem;
+  border-radius: 50px;
+  background: linear-gradient(264deg #df8908 -5.09% #b415ff 106.28%);
+  cursor: pointer; */
+
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-connect:hover {
+  border: 2px solid white;
+}
+
+.hero-resume {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
 }
