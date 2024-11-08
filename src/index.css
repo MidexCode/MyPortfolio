@@ -21,7 +21,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 5rem;
+  margin: 1rem 4rem;
+  background: black;
 }
 
 .nav-logo h2 {
@@ -458,4 +459,125 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   /* margin: 10px; */
+}
+
+/* Contact  */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 4rem;
+}
+
+.contact-title {
+  position: relative;
+}
+
+.contact-title h1 {
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.contact-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.contact-container {
+  display: flex;
+  gap: 10rem;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  max-width: 550px;
+  color: #d8d8d8;
+  font-size: 1rem;
+  line-height: 35px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #d8d8d8;
+  font-size: 1rem;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.contact-right label {
+  color: #d8d8d8;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-right input {
+  border: none;
+  width: 30rem;
+  height: 5rem;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  background: #32323c;
+  font-family: flames;
+  font-size: 1rem;
+}
+
+.contact-right textarea {
+  border: none;
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #32323c;
+  color: #a0a0a0;
+  font-family: "flames";
+  font-size: 1rem;
+}
+
+.contact-button {
+  /* width: 10rem; */
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%);
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
