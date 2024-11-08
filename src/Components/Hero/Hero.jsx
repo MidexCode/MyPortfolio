@@ -1,6 +1,6 @@
 import React from "react";
-import profileimg from "../../assets/IMG-20241008-WA0014.png";
-// import profileimg from "../../assets/WhatsApp Image 2023-11-05 at 12.48.28_325d2927.jpg";
+// import profileimg from "../../assets/IMG-20241008-WA0014.png";
+import profileimg from "../../assets/WhatsApp Image 2023-11-05 at 12.48.28_325d2927.jpg";
 
 export const Hero = () => {
   return (
