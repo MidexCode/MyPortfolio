@@ -108,17 +108,17 @@ export const About = () => {
 
             <div className="about-achievements">
               <div className="about-achivement">
-                <h1>1+</h1>
+                <h1>0</h1>
                 <p>YEARS OF EXPERIENCE</p>
               </div>
               <hr />
               <div className="about-achivement">
-                <h1>10+</h1>
+                <h1>2+</h1>
                 <p>PROJECT COMPLETED</p>
               </div>
               <hr />
               <div className="about-achivement">
-                <h1>5+</h1>
+                <h1>1+</h1>
                 <p>HAPPY CLIENTS</p>
               </div>
             </div>
