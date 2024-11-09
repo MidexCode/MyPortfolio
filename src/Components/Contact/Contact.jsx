@@ -20,7 +20,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div id="contact" className="contact">
+      <div id="Contact" className="contact">
         <div className="contact-title">
           <h1>Get in Touch</h1>
           {/* <img src={themepattern} alt="Theme pattern" /> */}

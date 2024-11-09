@@ -6,7 +6,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 export const Hero = () => {
   return (
     <>
-      <div id="home" className="hero">
+      <div id="Hero" className="hero">
         <div className="hero-profileimg">
           <img src={profileimg} alt="A picture of oyeleke toluwanimi praise" />
         </div>
