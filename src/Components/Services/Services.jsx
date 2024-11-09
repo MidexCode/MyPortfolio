@@ -20,10 +20,10 @@ export const Services = () => {
                 <h2>{service.s_name}</h2>
                 <p>{service.s_desc}</p>
 
-                <div className="service-readmore">
+                {/* <div className="service-readmore">
                   <p>Read More</p>
                   <img src={arrow} alt="" />
-                </div>
+                </div> */}
               </div>
             );
           })}

@@ -39,6 +39,7 @@ body {
   align-items: center;
   gap: 3rem;
   list-style: none;
+  cursor: pointer;
 }
 
 .nav-button {
@@ -364,7 +365,7 @@ body {
 
 .services-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
 }

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import underline from "../../assets/nav_underline.svg";
 
 export const Navbar = () => {
+  const [menu, setMenu] = useState("home");
+
   return (
     <>
       <div className="navbar">
@@ -10,11 +13,26 @@ export const Navbar = () => {
 
         <div className="nav-items">
           <ul className="nav-menu">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li>
+              <p>Home</p>{" "}
+              {menu === "home" ? <img src={underline} alt="" /> : <></>}
+            </li>
+            <li>
+              <p>About Me</p>
+              {menu === "about" ? <img src={underline} alt="" /> : <></>}
+            </li>
+            <li>
+              <p>Services</p>
+              {menu === "service" ? <img src={underline} alt="" /> : <></>}
+            </li>
+            <li>
+              <p>Portfolio</p>
+              {menu === "portfolio" ? <img src={underline} alt="" /> : <></>}
+            </li>
+            <li>
+              <p>Contact</p>
+              {menu === "contact" ? <img src={underline} alt="" /> : <></>}
+            </li>
           </ul>
         </div>
 
