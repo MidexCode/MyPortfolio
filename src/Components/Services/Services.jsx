@@ -9,7 +9,7 @@ export const Services = () => {
       <div id="service" className="service">
         <div className="services-title">
           <h1>My Services</h1>
-          <img src={themepattern} alt="" />
+          {/* <img src={themepattern} alt="" /> */}
         </div>
 
         <div className="services-container">

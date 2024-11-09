@@ -66,7 +66,7 @@ export const About = () => {
       <div id="about" className="about">
         <div className="about-title">
           <h1>About me</h1>
-          <img src={themepattern} alt="" />
+          {/* <img src={themepattern} alt="" /> */}
         </div>
 
         <div className="about-sections">

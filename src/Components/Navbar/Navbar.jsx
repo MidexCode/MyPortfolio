@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import underline from "../../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import menu_open from "../../assets/menu_open.svg";
+import menu_close from "../../assets/menu_close.svg";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -11,9 +13,11 @@ export const Navbar = () => {
         <div className="nav-logo">
           <h2>Midex</h2>
         </div>
+        <img src={menu_open} alt="" className="nav-mob-open" />
 
         <div className="nav-items">
           <ul className="nav-menu">
+            <img src={menu_close} alt="" className="nav-mob-close" />
             <li>
               <AnchorLink className="anchor-link" href="#home">
                 <p onClick={() => setMenu("home")}>Home</p>{" "}

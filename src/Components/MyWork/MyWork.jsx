@@ -8,7 +8,7 @@ export const MyWork = () => {
       <div id="portfolio" className="mywork">
         <div className="mywork-title">
           <h1>My Latest Work</h1>
-          <img src={themepattern} alt="" />
+          {/* <img src={themepattern} alt="" /> */}
         </div>
 
         <div className="mywork-container">
