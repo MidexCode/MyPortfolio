@@ -1,11 +1,12 @@
 import React from "react";
 // import profileimg from "../../assets/IMG-20241008-WA0014.png";
 import profileimg from "../../assets/WhatsApp Image 2023-11-05 at 12.48.28_325d2927.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Hero = () => {
   return (
     <>
-      <div className="hero">
+      <div id="home" className="hero">
         <div className="hero-profileimg">
           <img src={profileimg} alt="A picture of oyeleke toluwanimi praise" />
         </div>
@@ -23,7 +24,11 @@ export const Hero = () => {
           </p>
 
           <div className="hero-action">
-            <div className="hero-connect">Connect with me</div>
+            <div className="hero-connect">
+              <AnchorLink className="anchor-link" offset={50} href="#contact">
+                Connect with me
+              </AnchorLink>
+            </div>
             <div className="hero-resume">
               <a href="my cv.pdf" download="My CV.pdf">
                 My Resume

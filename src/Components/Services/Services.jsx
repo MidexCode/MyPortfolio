@@ -6,7 +6,7 @@ import Services_Data from "../../assets/services_data";
 export const Services = () => {
   return (
     <>
-      <div className="service">
+      <div id="service" className="service">
         <div className="services-title">
           <h1>My Services</h1>
           <img src={themepattern} alt="" />

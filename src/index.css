@@ -21,8 +21,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 4rem;
+  /* margin: 1rem 4rem; */
+  margin-left: 4rem;
+  margin-right: 4rem;
   background: black;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-logo h2 {
@@ -42,6 +46,17 @@ body {
   cursor: pointer;
 }
 
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+
 .nav-button {
   padding: 1rem 2rem;
   border-radius: 50px;
@@ -52,6 +67,11 @@ body {
 
 .nav-button:hover {
   transform: scale(1.03);
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
 }
 
 /* Hero */
@@ -441,14 +461,14 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.5s;
-  width: 419px;
-  height: 280px;
-  /* border-radius: 1rem; */
+  /* width: 419px;
+  height: 280px; */
+  border-radius: 0.5rem;
 }
 
 .mywork-container img:hover {
   transform: scale(1.1);
-  border: 4px solid #ff00ff;
+  /* border: 4px solid #ff00ff; */
   border-radius: 10px;
   transition: 0.5s;
 }
