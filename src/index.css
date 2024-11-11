@@ -35,7 +35,7 @@ body {
   padding: 1rem 4rem;
   background: black;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   cursor: pointer;
 }
 
