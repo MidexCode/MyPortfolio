@@ -25,8 +25,8 @@ export const Hero = () => {
 
           <div className="hero-action">
             <div className="hero-connect">
-              <AnchorLink className="anchor-link" offset={50} href="#contact">
-                Connect with me
+              <AnchorLink className="anchor-link" offset={50} href="#Contact">
+                Connect With Me
               </AnchorLink>
             </div>
             <div className="hero-resume">
