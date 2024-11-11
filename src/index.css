@@ -366,6 +366,7 @@ body {
 }
 
 .service-format p {
+  margin-top: 1rem;
   font-size: 1.5rem;
   color: #d4d4d4;
   line-height: 1.5;
@@ -497,7 +498,7 @@ body {
   border: none;
   /* width: 100%;
   max-width: 80rem; */
-  width: 30rem !important;
+  width: 30rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
   background: #32323c;
@@ -528,7 +529,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar,
   .hero,
   .about,
@@ -537,10 +538,6 @@ body {
   .contact {
     padding: 1rem;
   }
-
-  /* .navbar {
-    margin: 20px 50px;
-  } */
 
   .nav-button {
     display: none;
@@ -593,12 +590,8 @@ body {
     grid-template-columns: 1fr;
   }
   .services-container {
-    /* display: grid; */
     grid-template-columns: 1fr;
     width: 45rem;
-    /* gap: 2rem;
-    margin-bottom: 3rem;
-    padding: 0rem 2rem; */
   }
 
   .service-format p {
@@ -611,8 +604,6 @@ body {
   .mywork-img {
     width: 700px;
     height: 300px;
-    /* object-fit: contain;
-    margin: 2rem 1rem; */
   }
 
   .about-para {
@@ -621,7 +612,7 @@ body {
     font-size: 1rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
-    justify-content: center; /* Centers the buttons horizontally */
+    justify-content: center;
     padding-left: 1rem;
   }
 
@@ -647,7 +638,6 @@ body {
   }
 
   .services-container {
-    /* display: grid; */
     grid-template-columns: 1fr;
     width: 30rem;
   }
@@ -660,12 +650,8 @@ body {
 
 @media (min-width: 427px) {
   .hero-profileimg {
-    /* margin-top: 4rem; */
     width: 200px;
     height: 200px;
-    /* border-radius: 55% 45% 55% 45%;
-    overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite; */
   }
 
   .hero-profileimg img {
@@ -684,18 +670,294 @@ body {
     width: 95%;
     font-size: 1rem;
     line-height: 1.5;
-    /* margin-top: 1rem; */
   }
 
   .hero-action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 2rem;
+  }
+
+  .skill-grid {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+
+  .about-achievements {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    width: 25rem;
+  }
+
+  .mywork-img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    border: none;
+    width: 20rem !important;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background: #32323c;
+    color: white;
+  }
+} */
+
+/* Responsive Design */
+
+/* Primary Mobile Styles (for screens 768px and below) */
+@media (max-width: 768px) {
+  .navbar,
+  .hero,
+  .about,
+  .service,
+  .mywork,
+  .contact {
+    padding: 1rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 1rem;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+  }
+
+  .nav-menu li {
+    font-size: 1.5rem;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    width: 45rem;
+  }
+
+  .service-format p {
+    font-size: 1.5rem;
+    color: #d4d4d4;
+    line-height: 1.5;
+    max-width: 25em;
+  }
+
+  .mywork-img {
+    width: 700px;
+    height: 300px;
+  }
+
+  .about-para {
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     margin-bottom: 2rem;
-    margin-top: 1rem;
+    padding-top: 2rem;
     justify-content: center;
-    margin-left: 0; */
+    padding-left: 1rem;
+  }
+
+  .skill-title {
+    padding-left: 1.5rem;
+  }
+
+  .skill-description {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Primary Desktop Styles (for screens 769px and above) */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  .navbar a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    margin-right: 3rem;
+  }
+
+  .nav-button {
+    padding: 1rem 0.5rem;
+    /* background-color: #f09; */
+    border-radius: 50px;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    gap: 10rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr 0.5fr;
+  }
+}
+
+/* Specific Styles for screens 567px and below */
+@media (max-width: 567px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+
+  .about-achievements {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    width: 30rem;
+  }
+
+  .mywork-img {
+    width: 500px;
+    height: 200px;
+  }
+}
+
+/* Specific Styles for screens 427px and below */
+@media (max-width: 427px) {
+  .hero-profileimg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-profileimg img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .hero-description h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .hero-description p {
+    text-align: center;
+    width: 95%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-grid {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+
+  .about-achievements {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    width: 25rem;
+  }
+
+  .mywork-img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    width: 20rem;
+    padding: 1rem 2rem;
   }
 }
