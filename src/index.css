@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Flame";
+  font-family: "outfit";
 }
 
 html,
@@ -788,7 +788,7 @@ body {
 
   .services-container {
     grid-template-columns: 1fr;
-    width: 45rem;
+    width: 35rem;
   }
 
   .service-format p {
@@ -799,7 +799,7 @@ body {
   }
 
   .mywork-img {
-    width: 700px;
+    width: 500px;
     height: 300px;
   }
 
@@ -883,7 +883,7 @@ body {
 
   .services-container {
     grid-template-columns: 1fr;
-    width: 30rem;
+    width: 20rem;
   }
 
   .mywork-img {
